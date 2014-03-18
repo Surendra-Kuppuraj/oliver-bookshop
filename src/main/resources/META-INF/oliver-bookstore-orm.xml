@@ -11,8 +11,8 @@
 	
 	<!-- ***************************NAMED QUERY************************  -->
 	
-	<named-query name="book.findAllBooks">
+	<!-- <named-query name="book.findAllBooks">
 		<query> SELECT b FROM Book b </query>
-	</named-query>
+	</named-query> -->
 		
 </entity-mappings>
