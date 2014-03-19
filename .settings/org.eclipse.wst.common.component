@@ -6,6 +6,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/entities"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/persistences"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/author-services"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/author-controller"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/dto"/>
         <property name="context-root" value="application"/>
         <property name="java-output-path" value="/application/target/classes"/>
     </wb-module>

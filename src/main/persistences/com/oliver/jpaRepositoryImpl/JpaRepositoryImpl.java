@@ -38,6 +38,7 @@ public class JpaRepositoryImpl<T> implements JPARepository<T> {
 	return entity;
     }
 
+    //TODO:Modifythe code
     public void remove(T entity) {
 	createConnection();
 	entityManager.remove(entity);
@@ -52,8 +53,8 @@ public class JpaRepositoryImpl<T> implements JPARepository<T> {
 	return entity;
     }
 
-    public T find( Object primaryKey,
-	    Map<String, Object> properties) {
+    //TODO:Modifythe code
+    public T find(Object primaryKey, Map<String, Object> properties) {
 	createConnection();
 	T searchResult = entityManager
 		.find(entityClass, primaryKey, properties);
