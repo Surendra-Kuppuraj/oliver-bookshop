@@ -51,62 +51,35 @@ public class Name implements Serializable {
     // ===========================================
     // Property accessor methods
     // ===========================================
-    /**
-     * @return the namesPk
-     */
+
     public Integer getNamesPk() {
 	return namesPk;
     }
 
-    /**
-     * @param namesPk
-     *            the namesPk to set
-     */
     public void setNamesPk(Integer namesPk) {
 	this.namesPk = namesPk;
     }
 
-    /**
-     * @return the firstName
-     */
     public String getFirstName() {
 	return firstName;
     }
 
-    /**
-     * @param firstName
-     *            the firstName to set
-     */
     public void setFirstName(String firstName) {
 	this.firstName = firstName;
     }
 
-    /**
-     * @return the lastName
-     */
     public String getLastName() {
 	return lastName;
     }
 
-    /**
-     * @param lastName
-     *            the lastName to set
-     */
     public void setLastName(String lastName) {
 	this.lastName = lastName;
     }
 
-    /**
-     * @return the authors
-     */
     public Collection<Author> getAuthors() {
 	return authors;
     }
 
-    /**
-     * @param authors
-     *            the authors to set
-     */
     public void setAuthors(Collection<Author> authors) {
 	this.authors = authors;
     }

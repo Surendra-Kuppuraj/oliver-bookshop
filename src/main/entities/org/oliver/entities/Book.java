@@ -34,9 +34,12 @@ public class Book implements Serializable {
     private String title;
 
     private int year;
-    
-    @ManyToMany(cascade=CascadeType.ALL, mappedBy="books")
+
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "books")
     private Collection<Author> authors;
+    
+    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "books")
+    private Collection<Category> categories;
 
     // ===========================================
     // Overloaded Constructor
@@ -119,22 +122,14 @@ public class Book implements Serializable {
     public void setYear(int year) {
 	this.year = year;
     }
-    
 
-    /**
-     * @return the authors
-     */
     public Collection<Author> getAuthors() {
-        return authors;
+	return authors;
     }
 
-    /**
-     * @param authors the authors to set
-     */
     public void setAuthors(Collection<Author> authors) {
-        this.authors = authors;
+	this.authors = authors;
     }
-
 
     // ===========================================
     // Overriding methods

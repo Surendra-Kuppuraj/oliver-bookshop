@@ -7,7 +7,8 @@
 		<mapping-file>META-INF/oliver-bookstore-orm.xml</mapping-file>
 		<class>org.oliver.entities.Book</class>
 		<class>org.oliver.entities.Author</class>
-		<class>org.oliver.entities.Name</class> 
+		<class>org.oliver.entities.Name</class>
+		<class>org.oliver.entities.Category</class> 
 		<properties>
 			<!-- Oracle Database Connection -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1523:orcl12" />

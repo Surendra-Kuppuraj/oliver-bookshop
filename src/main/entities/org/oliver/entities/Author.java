@@ -43,8 +43,8 @@ public class Author implements Serializable {
     }
 
     public Author(Integer authorsPk) {
-   	this.authorsPk = authorsPk;
-       }
+	this.authorsPk = authorsPk;
+    }
 
     public Author(Integer authorsPk, String biographie) {
 	this.authorsPk = authorsPk;
@@ -55,71 +55,42 @@ public class Author implements Serializable {
     // Property accessor methods
     // ===========================================
 
-    /**
-     * @return the biographie
-     */
     public String getBiographie() {
 	return biographie;
     }
 
-    /**
-     * @return the authorsPk
-     */
     public Integer getAuthorsPk() {
 	return authorsPk;
     }
 
-    /**
-     * @param authorsPk
-     *            the authorsPk to set
-     */
     public void setAuthorsPk(Integer authorsPk) {
 	this.authorsPk = authorsPk;
     }
 
-    /**
-     * @param biographie
-     *            the biographie to set
-     */
     public void setBiographie(String biographie) {
 	this.biographie = biographie;
     }
 
-    /**
-     * @return the name
-     */
     public Name getName() {
 	return name;
     }
 
-    /**
-     * @param name
-     *            the name to set
-     */
     public void setName(Name name) {
 	this.name = name;
     }
-    
-    /**
-     * @return the books
-     */
+
     public Collection<Book> getBooks() {
-        return books;
+	return books;
     }
 
-    /**
-     * @param books the books to set
-     */
     public void setBooks(Collection<Book> books) {
-        this.books = books;
+	this.books = books;
     }
 
-    
     // ===========================================
     // Overriding methods
     // ===========================================
 
-    
     @Override
     public int hashCode() {
 	int hash = 0;
