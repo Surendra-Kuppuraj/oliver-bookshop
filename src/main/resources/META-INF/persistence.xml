@@ -5,7 +5,9 @@
 	<persistence-unit name="application" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<mapping-file>META-INF/oliver-bookstore-orm.xml</mapping-file>
-		<class>org.oliver.entities.Book</class> 
+		<class>org.oliver.entities.Book</class>
+		<class>org.oliver.entities.Author</class>
+		<class>org.oliver.entities.Name</class> 
 		<properties>
 			<!-- Oracle Database Connection -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1523:orcl12" />

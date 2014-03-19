@@ -1,10 +1,13 @@
 package org.oliver.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 /**
@@ -31,6 +34,9 @@ public class Book implements Serializable {
     private String title;
 
     private int year;
+    
+    @ManyToMany(cascade=CascadeType.ALL, mappedBy="books")
+    private Collection<Author> authors;
 
     // ===========================================
     // Overloaded Constructor
@@ -113,6 +119,22 @@ public class Book implements Serializable {
     public void setYear(int year) {
 	this.year = year;
     }
+    
+
+    /**
+     * @return the authors
+     */
+    public Collection<Author> getAuthors() {
+        return authors;
+    }
+
+    /**
+     * @param authors the authors to set
+     */
+    public void setAuthors(Collection<Author> authors) {
+        this.authors = authors;
+    }
+
 
     // ===========================================
     // Overriding methods
