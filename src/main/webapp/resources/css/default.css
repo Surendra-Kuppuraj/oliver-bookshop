@@ -1,0 +1,217 @@
+@CHARSET "ISO-8859-1";
+
+h1,h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3,h4 {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+textarea {
+	font-family: serif;
+}
+
+body {
+	background: #292F26;
+	color: #eee;
+	margin: 10px auto;
+	width: 1000px;
+}
+
+/* -------------------------------------------- Header and its Title---------- --------------------------------- */
+#header {
+	padding-top: 0.5em;
+}
+
+#title {
+	padding-left: 20px;
+	color: white;
+}
+
+.searchText,.languageSelection {
+	padding: 33px 0px 0px 75px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* -------------------------------------------- Navigation and Sub-navigation ---------------------------------- */
+#navigation,.sub-navigation {
+	border-right-width: 6px;
+	border-left-width: 6px;
+	border-style: solid;
+	border-color: #FFA500;
+}
+
+#navigation ul,.sub-navigation ul {
+	list-style-type: none;
+}
+
+#navigation ul li a,.sub-navigation ul li,a {
+	color: white;
+	text-decoration: none;
+}
+
+/* -------------------------------------------- Navigation -------------------------------------------------- */
+#navigation {
+	min-height: 2em;
+	border-top-width: 6px;
+	border-bottom-width: 1px;
+}
+
+#navigation ul {
+	margin: 0px 0px 0px 25px;
+	padding: 0.5em;
+}
+
+#navigation ul li {
+	min-width: 15%;
+}
+
+#navigation li,.headerTitle {
+	float: left;
+}
+
+#navigation ul li:hover a {
+	color: #fff;
+}
+
+#navigation ul li a {
+	display: block;
+}
+
+#navigation ul ul {
+	display: none;
+	border-radius: 0px;
+	position: relative;
+}
+
+#navigation ul li:hover>ul {
+	display: block;
+}
+
+#navigation ul ul li {
+	float: left;
+	position: relative;
+	margin: 0px 0px 0px 25px;
+	padding: 0.5em;
+}
+
+#navigation ul ul li a {
+	color: #4b545f;
+}
+
+#navigation ul ul li a:hover {
+	background: #4b545f;
+}
+
+/* -------------------------------------------- Sub-navigation ------------------------------------------------ */
+.sub-navigation {
+	height: 35px;
+	border-top-width: 1px;
+	border-bottom-width: 6px;
+}
+
+.sub-navigation ul {
+	margin: 0px 0px 0px 25px;
+	padding: 0px;
+}
+
+.sub-navigation ul li {
+	float: left;
+	min-width: 15%;
+	padding: 7px 20px;
+}
+
+/* -------------------------------------------- Content-------------------------------------------------------- */
+#content {
+	clear: both;
+	min-height: 600px;
+}
+.split {
+	border: none;
+	height: 5px;
+}
+/* -------------------------------------------- Admin Main Content-------------------------------------------------------- */
+.admin-main-content {
+	border: 5px groove #FFA500;
+	height: 600px;
+}
+
+/* -------------------------------------------- categories-------------------------------------------------------- */
+.categories-creation-class {
+	padding-left: 300px;
+}
+
+/* -------------------------------------------- Footer--------------------------------------------------------- */
+#footer {
+	clear: both;
+	border-top: 3px solid #FFA500;
+	font-size: small;
+}
+
+/* -------------------------------------------- Other Format TODO---------------------------------------------- */
+.colonAppend:after {
+	content: ": ";
+	padding-right: 20px;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+.success {
+	color: green;
+	font-weight: bold;
+}
+
+.form-footer {
+	padding-left: 5em;
+}
+
+.data-table {
+	border-collapse: collapse;
+}
+
+.header-cell {
+	border-bottom: 1px solid black;
+	vertical-align: bottom;
+}
+
+.data-cell {
+	border-left: 1px solid black;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.cell-left {
+	text-align: right;
+}
+
+.data-cell:first-child {
+	border-left: none;
+}
+
+.label {
+	font-weight: bold;
+	padding-right: 1em;
+}
+
+.details-table .label {
+	border-bottom: 1px solid black;
+}

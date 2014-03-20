@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+<composite:interface>
+	<composite:attribute name="outputLabelText" required="true"
+		description="Output text label for given input text." />
+	<composite:attribute name="inputTextId" required="true" description="Unique input text id." />
+	<composite:attribute name="inputTextValue" required="true" description="Field to hold input." />
+</composite:interface>
+<composite:implementation>
+	<tr>
+		<td><h:outputLabel for="#{cc.attrs.inputTextId}" class="colonAppend"
+				value="#{cc.attrs.outputLabelText}" /></td>
+		<td><h:inputText id="#{cc.attrs.inputTextId}" value="#{cc.attrs.inputTextValue}" /></td>
+	</tr>
+</composite:implementation>
+</html>
